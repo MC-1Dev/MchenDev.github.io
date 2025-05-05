@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="shortcut icon" href="images/logo_fav.ico">
+	<link rel="stylesheet" href="styles/main_rwd.css">
+	<link rel="stylesheet" href="styles/slicknav.css">
+	<link rel="stylesheet" href="styles/responsive.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
+				$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'><!--social icons8-->
+	<title>Game & Software Developer</title>
+</head>
+
+<body class=" home-page">
+	
+	<div class="main-box">
+		<header>
+			
+
+			<nav>
+				<a href="index.html"><img src="images/logo.png" alt="logo"></a>
+			</nav>
+				<h2><em>Moonlight Developer</em></h2>
+				<h3>Program Dreams</h3>
+
+				<nav id="mobile_menu"></nav>
+			<nav id="nav_menu">
+		    	<ul id="menu">
+						<li><a href="index.html" class="active">Home</a></li>
+						<li class="nav-item">
+							<span class="hidden" href="#">/</span>
+						</li>
+						<li><a href="resume.html">Resume</a></li>
+						
+						<li class="nav-item">
+							<span class="hidden" href="#">/</span>
+						</li>
+		        		<li><a href="works.html">Previous Projects</a>
+		            	<ul>
+										<li><a href="works.html#MadeGames">Made Games</a></li>
+										<li><a href="works.html#QA">QA</a></li>
+										<li><a href="works.html#OtherProjects">Other Projects</a></li>
+		            	</ul>
+		        	
+		    	</ul>
+			</nav>
+		</header>
+<div class="background">
+		<main class="wrapper">
+			<aside id="left">
+				<h2>Additional Resources</h2>
+				<ul>
+				  <li><a href="#" onclick="openPopup(0)">Engines that are used</a></li>
+				  <li><a href="#" onclick="openPopup(1)">Programs Used</a></li>
+				  
+				  <br>
+				  <p id="Custom1"></p>
+				</ul>
+			  </aside>
+			  
+			  <!-- Popup window -->
+			  <div id="popup" style="display:none; position:fixed; top:20%; left:25%; width:50%; background:#fff; border:2px solid #444; padding:20px; z-index:1000; box-shadow: 0 0 15px rgba(0,0,0,0.5);">
+				<button onclick="closePopup()" style="float:right;">Exit</button>
+				<div style="text-align:center;">
+				  <img id="carouselImage" src="" alt="carousel" style="width:80%; max-height:300px; object-fit:contain;">
+				  <br><br>
+				  <button onclick="changeImage(-1)">Previous</button>
+				  <button onclick="changeImage(1)">Next</button>
+				</div>
+			  </div>
+			  
+			  <!-- Overlay -->
+			  <div id="overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:999;" onclick="closePopup()"></div>
+			  
+			  <script>
+				// Different image sets for each link
+				const imageSets = [
+  					["images/Unity.png", "images/Unreal.png", "images/Godot.png"],
+  					["images/V.S1.png", "images/Vsc.png", "images/Aseprite.png", "images/Github.png", "images/SQL1.png", "images/Discord1.png", "images/Slack.png", "images/Tab1.png", "images/Trello1.png", "images/Adobe1.png"]
+				];
+			  
+				let currentImageSet = [];
+				let currentImageIndex = 0;
+			  
+				function openPopup(setIndex) {
+				  currentImageSet = imageSets[setIndex];
+				  currentImageIndex = 0;
+				  document.getElementById('carouselImage').src = currentImageSet[currentImageIndex];
+				  document.getElementById('popup').style.display = 'block';
+				  document.getElementById('overlay').style.display = 'block';
+				}
+			  
+				function closePopup() {
+				  document.getElementById('popup').style.display = 'none';
+				  document.getElementById('overlay').style.display = 'none';
+				}
+			  
+				function changeImage(direction) {
+				  currentImageIndex = (currentImageIndex + direction + currentImageSet.length) % currentImageSet.length;
+				  document.getElementById('carouselImage').src = currentImageSet[currentImageIndex];
+				}
+			  </script>		  
+			
+				
+				<div class="hero-section">
+					<div class="col-lg-4 heroContent">
+						<h3>Hello, It's Me</h3>
+						<h1>Morgan Chen</h1>
+						<h2>And I'm a &nbsp;<span class="text"></span>
+							<span class="text"></span></h2>
+							<div class="d-flex justify-content-start gap-3 d-sm-flex homeSocial">
+								<a href="https://www.linkedin.com/in/mchendev/" style="--i:7"><i class='bx bxl-linkedin'></i></a>
+								<a href="https://wilmu.joinhandshake.com/profiles/rjepp5" style="--i:8"><i class="fas fa-handshake"></i></a>
+								<a href="https://profile.indeed.com/p/morganc-qjz7p27" style="--i:9">
+									<img src="https://cdn.worldvectorlogo.com/logos/indeed-1.svg" alt="Indeed" style="height: 10px;">
+								  </a>
+								
+								
+							</div>
+						
+					</div>
+								<img src="images/ProfessionalPic.jpg" alt="Profile Picture" class="profile-picture"></div>
+			<section>
+					<p>You’ve stumbled upon the portfolio of Mo Chen (game programmer, hard worker, and Game enthusiast.) Here you can 
+						view my resume, a few of the projects I have either created or have worked in doing either programming or QA testing,
+						and some fun coding programs or websites.
+					</p>
+
+					<p>Currently I’m a full time student at Wilmington University to gain my Bachelor in Computer Science, and have two associates from Camden County College.
+						Those associates are in Game and Web Design and Development. Until recently I was at
+						Pet groomer for 15 years. Back in 2020, I was at owner of my own shop but did QA testing on Alpha/Beta games in my free time
+						after deciding that a career change was a must I went back to school for computer science, game design and development. 
+						Previously I have helped developers test and find anything wrong with their upcoming projects such as virtual world/MMO 
+						Zenith vr, Ilysia vr, Never Dawn, and the Maze.
+					</p>
+					<p>I’d love to chat about job opportunities, projects I’ve worked on, diversity in tech, game, or anything you would like to know.
+					</p>
+					<a href="works.html"><button class="btn btn-link btn-box text-white">Learn More</button></a>
+						
+					<h1>What is offered</h1>
+				<h3><strong>Game developer/programming</strong></h3>
+					<p>Coding in most engines to make a project run as smoothly as possible.</p>
+
+				<h3><strong>Program Development</strong></h3>
+				<p>Creating functional programs to suite different needs, can be made in different coding Languages or IDEs.
+				</p>
+
+				<h3><strong>Project QA Testing</strong></h3>
+					<p>Working directly with development teams to find exactly if and what any problems that can be found in all projects. With extensive reports
+						on how the problem happens and suggestions on any fixes if any that can be done.
+					</p>
+
+				<h3><strong>Strong Team Player</strong></h3>
+					<p>Making sure that no matter which team is needing help, to be fluent enough to work on any team that needs it.</p>
+
+				<h3><strong>Orginization and Punctionality</strong></h3>
+					<p>When given and assignment timing and orginization is key to make any project stay on track to be release on deadlines,.</p><br>
+					
+			 
+			</section>
+			<div class="email">
+				<b>For up-to-date information on the programming, please
+				<a href="mailto:mchendev90@gmail.com?subject=More about portfolio">email me</a>
+				</b>
+			</div>
+			
+		</main><br>
+</div>
+		<footer>
+			<p>&copy;2025 Mo Chen</p>
+		</footer>
+	</div>
+	<script src="js/main.js"></script>
+
+	
+</body>
+
+</html>
