@@ -1,0 +1,39 @@
+@media screen and (min-width: 321px) and (max-width: 768px) {
+    /* CSS rules for screens between 321px and 768px wide */
+    body {
+        background-color: var(--main-bg) !important;
+    }
+    .nav-item {
+        text-align: center !important;
+        margin-top: 10px;
+    }
+    .nav-link:hover {
+        background-color: var(--main-white);
+    }
+    .navbar-toggler {
+        border: 0 !important;
+    }
+    .hero {
+        margin-top: 25% !important;
+    }
+    .beta {
+        margin-top: 5%;
+    }
+    .bounce {
+        margin-inline: auto;
+    }
+    .betaImg  {
+        display: none;
+    }
+    .betaHeading {
+        width: 80% !important;
+    }
+    .betaHeading p {
+        margin-bottom: 5%;
+    }
+    .slideLeft, .slideRight {
+        animation: none !important;
+        opacity: 1;
+        width: 100% !important;
+    }
+}

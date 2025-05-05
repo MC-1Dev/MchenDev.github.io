@@ -1,0 +1,739 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap&family=Share+Tech+Mono&display=swap&family=Istok+Web&display=swap');
+:root {
+  --main-red: #ff0000;
+  --basic-black: #000;
+  --basic-white: #fff;
+  --main-bg: #111;
+  --main-grey: #222;
+}
+:where(h1, h2, h3) {
+  font-weight: 700 !important;
+  font-family: 'Istok Web', sans-serif !important;
+}
+
+.hero-section {
+  display: flex;                  
+  align-items: center;           
+  justify-content: space-between; /* Space between text and image */
+  padding: 50px;                 
+}
+.heroContent h3 {
+    text-align: left;
+    color: var(--main-red) !important;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+.heroContent h2 {
+    text-align: left;
+    color: var(--main-red) !important;
+    opacity: 0;
+    margin-bottom: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+.heroContent h2 span {
+    font-family: 'Share Tech Mono', monospace;
+    color: var(--main-red) !important;
+    text-shadow:1px 1px 1px #ff0000;
+}
+.heroContent h1 {
+    text-align: left;
+    color: var(--main-red) !important;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+.homeContent p {
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.homeSocial a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background:transparent;
+  border: 2px solid var(--main-red);
+  border-radius: 50%;
+  font-size: 20px;
+  color: var(--main-red);
+  text-decoration: none;
+  /* margin: 30px 15px 30px 0; */
+  transition: .5s ease;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: calc(.2s * var(--i));
+  filter: brightness(0) saturate(100%) invert(19%) sepia(93%) saturate(7483%) hue-rotate(343deg) brightness(98%) contrast(103%);
+}
+.homeSocial a:hover {
+  background: var(--main-red);
+  color: var(--main-black);
+  box-shadow: 0 0 20px var(--main-red);
+}
+.btn-box {
+  float: right;
+  margin: 5% 20% 5% 0;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  background: var(--main-red);
+  font-size: 16px;
+  letter-spacing: 1px;
+  opacity: 0;
+  animation: slideTop 1s ease forwards;
+  animation-delay: 2s;
+  box-shadow: 0 0 5px var(--main-red), 
+              0 0 25px var(--main-red);
+}
+.btn-box:hover {
+  color: var(--basic-black) !important;
+  background: var(--main-red) !important;
+  box-shadow: 0 0 5px var(--main-red), 
+              0 0 25px var(--main-red), 
+              0 0 50px var(--main-red);
+}
+
+/* Hero paragraph Text Animation */
+@keyframes slideLeft {
+  0% {
+      transform: translateX(100px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0px);
+      opacity: 1;
+  }
+}
+/* Hero Text Animation */
+@keyframes slideBottom {
+  0% {
+      transform: translateY(-100px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0px);
+      opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+.profile-picture {
+  margin-left: 20px;             /* Space between text and image */
+  width: 200px;                   /* Adjust size as needed */
+  height: 200px;                  /* Adjust size as needed */
+  border-radius: 50%;            /* Makes the image circular */
+  object-fit: cover;             /* Ensures the image covers the area */
+  align-self: flex-start;         /* Aligns the image to the top */
+}
+
+.main-text{
+  flex:1 1 50%;
+  min-width: 100px;
+}
+
+.main-text, .right{
+  padding: 20px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comfortaa', cursive;
+  background-image: url('../images/CodeBG.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+  min-height: 100vh;
+}
+
+.main-box {
+  margin: 0 auto;
+  max-width: 1500px;
+  width: 95%;
+  border: 2px solid rgb(255, 4, 4);
+  box-shadow: 0px 14px 20px 15px #000;
+
+  background-image: url('../images/techBG1.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+  min-height: 100vh;
+}
+
+body.home-page {
+  background-image: url(../images/CodeBG.jpg);
+  background-size: cover; /* Fullscreen effect */
+}
+
+/* Resume Page */
+body.resume-page {
+  background-image: url(../images/CodeBG.jpg);
+  background-size: cover; /* Prevents zoom */
+}
+
+/* Works Page */
+body.works-page {
+  background-image: url(../images/CodeBG.jpg);
+  background-size: cover;
+}
+
+
+
+
+
+h1 {
+  font-size:46px;
+  text-shadow:1px 1px 1px rgb(255, 255, 255);
+  
+}
+h3 {
+  font-size: 25px;
+  text-shadow:1px 1px 1px rgb(255, 255, 255);
+ 
+}
+h2{
+  font-size: 25px;
+  text-shadow:1px 1px 1px rgb(255, 255, 255);
+  
+}
+p {
+  font-family: 'Comfortaa', cursive !important;
+  font-size: 20px !important;
+}
+header{
+  background: url(../images/background.png);
+  width: 100%;
+  border: 1px solid rgb(0, 0, 0);
+  
+}
+header img {
+  max-width: 140px;
+  min-width: 70px;
+  margin-top:2%;
+  margin-left:3%;
+  float:left;
+  
+}
+header h2 {
+  font-size: 250%;
+  text-shadow:3px 3px 3px rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+header h3 {
+  font-size: 150%;
+  text-shadow:3px 3px 3px rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+}
+.slicknav_menu {
+  background-color: rgb(188, 6, 6) !important;
+}
+.slicknav_btn {
+  background-color: rgb(85, 6, 2) !important;
+}
+.slicknav_nav a:hover {
+  background-color: rgb(105, 3, 3) !important;
+}
+#nav_menu {
+  background-color: rgb(223, 5, 5);
+  padding: .5em;
+}
+
+#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#menu li {
+  display: inline-block;
+}
+#menu li a {
+  color: #fff;
+  text-decoration: none;
+  padding: .8em 2em;
+}
+#menu ul li {
+  display: block;
+}
+#menu li ul {
+  display: none;
+}
+#menu ul li a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 1.5em 2em;
+  background-color: rgb(132, 23, 2);
+  white-space: nowrap;
+}
+#menu li a:hover {
+  background-color: rgb(222, 176, 176);
+}
+#menu ul li a:hover {
+  background-color: rgb(145, 4, 4);
+}
+#menu li:hover ul {
+  display: block;
+  position: absolute;
+}
+
+
+.heroContent h2 span {
+  font-family: 'Share Tech Mono', monospace;
+  color: var(--basic-white) !important;
+}
+
+
+
+
+
+section {
+  margin:auto;
+  width:60%;
+  max-width: 1200px;
+}
+section p{
+  color:#ffffff;
+  line-height: 1.6;
+  font-weight: bold;
+  text-shadow:3px 3px 3px rgb(255, 0, 0);
+}
+section h1 {
+  color:red;
+  margin-top: 3%;
+}
+section h2{
+  color: red;
+}
+section h3, section a:visited {
+  color: red;
+  font-size: 125%;
+}
+section a:focus, section a:hover {
+  color:rgb(109, 2, 2);
+}
+section li{
+  color:white;
+  font-weight: bold; 
+  text-shadow:3px 3px 3px rgb(255, 0, 0); 
+  font-size: large;
+}
+
+
+
+#right {
+ 
+  float: right;
+  flex: 1 1 40%;
+  min-width: 150px;
+}
+
+#right li{
+  color:white;
+  position: relative;
+  max-width: 200px;
+}
+
+#right p {
+  line-height: 1.4;
+}
+
+#left {
+  width:33%;
+  padding-top: 3%;
+  float: left;
+  color:#fff;
+  
+}
+#left h2 {
+  margin-left: 3%;
+}
+#left a {
+  text-decoration: none;
+}
+aside h2 {
+  color:red;
+}
+aside a, aside a:visited {
+  color: rgb(112, 93, 235);
+}
+aside a:focus, aside a:hover {
+  color: maroon;
+}
+aside ul {
+  line-height: 100%;
+}
+aside ul li a  {
+  font-weight: bold;
+}
+
+#Custom1{
+  background-image:url(../images/works/MosSkills.png);
+  background-repeat: no-repeat;
+  width:244px;
+  height:222px;
+}
+#Custom1:hover{
+  background-image:url(../images/coding-banner.png);
+  background-size:80%;
+ 
+}
+
+#image1{
+  background-image:url(../images/game_dev_icon.jpg);
+  background-repeat: no-repeat;
+  width:234px;
+  height:212px;
+}
+#image1:hover{
+  background-image:url(../images/coding-banner.png);
+  background-size: 80%;
+ 
+}
+
+
+#MadeGames {
+  text-align: center;
+  margin-bottom: 20px; /* optional, adjust spacing between sections */
+}
+
+#MadeGames h2 {
+  font-size: 2em; /* adjust the font size of the title */
+  margin-bottom: 10px; /* space between the title and the game box */
+}
+
+#QA {
+  text-align: center;
+  margin-bottom: 20px; /* optional, adjust spacing between sections */
+}
+
+#QA h2 {
+  font-size: 2em; /* adjust the font size of the title */
+  margin-bottom: 10px; /* space between the title and the game box */
+}
+
+#OtherProjects {
+  text-align: center;
+  margin-bottom: 20px; /* optional, adjust spacing between sections */
+}
+
+#OtherProjects h2 {
+  font-size: 2em; /* adjust the font size of the title */
+  margin-bottom: 10px; /* space between the title and the game box */
+}
+
+
+.note-header {
+  font-size: 3em;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #ccc; /* optional */
+  text-shadow:3px 3px 3px #ff0000;
+}
+
+
+#prev_games {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  gap: 20px;
+  padding:20px;
+  box-sizing:border-box;
+  
+}
+
+#prev_games div {
+  flex: 0 0 calc(50% - 20px);                         /*flex: 0 0 calc(33.333% - 13.33px); /* three per row with 20px total gap */
+  box-sizing: border-box;
+  background-color: #111;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  color: white;
+}
+
+#prev_games div h2 {
+  color: red;
+  font-size: 1.5em;
+}
+
+#prev_games div p {
+  font-size: 0.75em;
+  line-height: 1.4em;
+ 
+}
+
+
+#zenith, #ilysia, #maze {
+  width: 100%;              /* fill the card’s width */
+  height: 200px;            /* pick whatever fixed height you need */
+  background-repeat: no-repeat;
+  background-size: contain; /* or cover, your choice */
+  background-position: center;
+  border-radius: 10px;
+}
+
+
+#zenith { background-image: url(../images/zenith.jpg); }
+#ilysia { background-image: url(../images/ilysia.jpg); }
+#maze   { background-image: url(../images/the_maze.jpeg); }
+#Makeshift {background-image: url(../images/works/MakeshiftPoster.png);}
+#BlackFridayBlitz {background-image: url(../images/works/BlackFridayBlitz4.png);}
+#CyberMondayMadness {background-image: url(../images/works/cyberMonday.png);}
+#NeverDawn {background-image: url(../images/works/NeverDawn.jpg);}
+#ShatteredRealms {background-image: url(../images/works/ShatteredRealms.png);}
+#Everwild {background-image: url(../images/works/Everwild\ The\ Forgotten\ Soul.png);}
+#DebugIsland {background-image: url(../images/works/DebugIsland.png);}
+
+#zenith:hover    { background-image: url(../images/zenith2.jpg); }
+#ilysia:hover    { background-image: url(../images/ilysia2.jpg); }
+#maze:hover      { background-image: url(../images/maze2.jpg); }
+#BlackFridayBlitz:hover {background-image: url(../images/works/BlackFridayBlitzPos.png);}
+#Makeshift:hover {background-image:url(../images/works/Makeshift1..png) ;}
+
+
+
+.game-image {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+/* Video under image */
+.game-video {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+  margin-top: 10px;
+}
+
+
+
+.bounce-top {
+	position: absolute;
+	top: 20px; /* adjust this based on your desired positioning */
+	left: 50%;
+	transform: translateX(-50%);
+	animation: guyfly 12s linear infinite;
+	z-index: 10;
+	text-align: center;
+}
+
+.bounce-top img {
+	width: 200px; /* adjust the image size as needed */
+	overflow: hidden;
+}
+
+@keyframes guyfly {
+  0% {
+  
+     animation-timing-function: ease-in;
+     transform: translateX(0%) scaleX(1); /* start at the center */
+    }
+    25% {
+      transform: translateX(-100vw) scaleX(1); /* move completely left off-screen */
+    }
+    50% {
+      transform: translateX(-50vw) scaleX(-1); /* stay off-screen */
+    }
+    75% {
+      transform: translateX(100vw) scaleX(-1); /* move completely right off-screen */
+    }
+    100% {
+      transform: translateX(20vw) scaleX(1); /* stay off-screen */
+    }
+  }
+  
+
+
+
+footer {
+  width: 100%;
+  clear: both;
+  border: 2px solid rgb(0, 0, 0);
+  background: rgb(219, 3, 3);
+  color: #fff;
+  font-size: 90%;
+  text-align: center;
+  height: 50px; /* use fixed px height, not % */
+  margin-bottom: 60px; /* space for the email at bottom */
+  position: relative; /* keeps it above content */
+}
+
+.email{
+  color: rgb(255, 0, 0);
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+  background: #000; /* dark background for visibility */
+  z-index: 1000;
+  
+}
+
+
+
+
+
+
+/* Responsive fix for mobile */
+@media screen and (max-width: 768px) {
+  #prev_games div {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 900px){
+  .slicknav_menu {
+    display:none;
+  }
+}
+@media only screen and (max-width: 900px) {
+  body {
+    font-size: 90%;
+    box-shadow: none;
+  }
+  #nav_menu{
+    display:none;
+  }
+}
+@media only screen and (max-width: 767px) and (min-width: 479px) {
+  body {
+    font-size: 90%;
+    box-shadow: none;
+  }
+
+  section p {
+    padding-right: 5%;
+  }
+  #left {
+    float:none;
+    width:100%;
+    margin: 0;
+    
+  }
+  aside h2 {
+    padding-left: 3%;
+  }
+  main, aside {
+    width: 100%;
+  }
+  #nav_menu {
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
+  }
+.js .slicknav_menu {
+    background-color: steelblue !important;
+    display:block;
+    padding:3px;
+  }
+  section h1 {
+    font-size: 200%;
+  }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    #left {
+      width: 100%;
+      float: right;
+      margin: 0;
+    }
+    section {
+      width: 100%;
+      float: right;
+      padding: 0 3%;
+      margin:0;
+    }
+
+}
+@media only screen and (max-width: 479px) {
+  body {
+    width: 100%;
+  }
+ 
+  h1 {
+    font-size: 150%;
+  }
+  h2 {
+    font-size: 120%;
+  }
+  section p {
+    padding-right: 5%;
+  }
+  #left {
+    margin: 0;
+    padding-right: 5%;
+  }
+  aside h2 {
+    padding-left: 3%;
+  }
+  main, aside {
+    width: 100%;
+   }
+   .wrapper {
+     display: flex;
+     flex-direction: column-reverse;
+   }
+   #left {
+     width: 100%;
+     float: right;
+     margin: 0;
+   }
+   section {
+     width: 100%;
+     float: right;
+     padding: 0 3%;
+     margin:0;
+   }
+}
+
+
