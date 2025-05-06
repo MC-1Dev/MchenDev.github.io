@@ -72,13 +72,17 @@
             <section id="prev_games">
                 <div id="first_game" class="game-card">
                     <div id="Makeshift" class="game-image"></div>
-                    <iframe 
-        src="https://www.youtube.com/embed/2_WRO_7IqLM?enablejsapi=1" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen
+                    <div class="game-video" 
+         onmouseover="player.playVideo()" 
+         onmouseout="player.pauseVideo()">
+      <iframe 
         id="youtube-player"
+        src="https://www.youtube.com/embed/2_WRO_7IqLM?enablejsapi=1&rel=0"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
       ></iframe>
+    </div>
                     <h1>MakeShift</h1>
                         <p>Play as Kit and explore the vast world of outer space. Fight through
                             difficult challenges to take back what's yours!
@@ -408,6 +412,29 @@
                             <p>Designed and implemented a relational database using Microsoft SQL Server 2022 and SQL Server Management Studio 20 to manage a game store’s inventory. The project includes structured tables for games, genres, platforms, and stock levels, with defined relationships and data integrity constraints. The database supports efficient queries for tracking inventory, managing product details, and generating sales reports.</p>
   
                     </div>
+
+
+<!-- YouTube Player API Script -->
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+  let player;
+
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('youtube-player', {
+      events: {
+        'onReady': onPlayerReady
+      }
+    });
+  }
+
+  function onPlayerReady(event) {
+    // Optional: mute video to allow autoplay
+    event.target.mute();
+  }
+</script>
+
+
+			
                 </section><br>
 			
 				    
