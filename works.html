@@ -72,9 +72,13 @@
             <section id="prev_games">
                 <div id="first_game" class="game-card">
                     <div id="Makeshift" class="game-image"></div>
-                    <video class="game-video" controls muted onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;">
-                        <source src="images/works/videos/MSVideo.mp4" type="video/mp4">
-                        </video>
+                    <div class="game-video-container">
+                        <iframe class="game-video" src="https://www.youtube.com/embed/2_WRO_7IqLM?mute=1&autoplay=0&loop=1&playlist=2_WRO_7IqLM"
+                                title="YouTube video"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                        </iframe>
+                      </div>
                     <h1>MakeShift</h1>
                         <p>Play as Kit and explore the vast world of outer space. Fight through
                             difficult challenges to take back what's yours!
@@ -88,12 +92,16 @@
             
                     <div id="sec_game" class="game-card">
                         <div id="BlackFridayBlitz" class=" game-image"></div>
-                        <video class="game-video" controls muted onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;">
-                        <source src="images/works/videos/BBBTrailer.mp4" type="video/mp4">
-                        </video>
+                        <div class="game-video-container">
+                            <iframe class="game-video" src="https://www.youtube.com/embed/8xxZykNJPkY?mute=1&autoplay=0&loop=1&playlist=8xxZykNJPkY"
+                                    title="YouTube video"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                            </iframe>
+                          </div>
                         <h1>Black Friday Blitz</h1>
                             <p>Genre: Action-Adventure | Beat-‘em-Up | Satirical RPG</p>
-                            <p>A 2D beat ‘em up game where you play as a shopper on Black Friday, brawling throughout the
+                            <p>A 2D beat ‘em up game where you play as a shopper on Black Friday brawling throughout the
                                 chaotic city.
                             </p>
 
@@ -105,9 +113,11 @@
 
                     <div id="third_game">
                         <div id="CyberMondayMadness" class="game-image"></div>
-                        <video class="game-video" controls muted onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;">
-                        <source src="images/works/videos/CMM.mp4" type="video/mp4">
-                        </video>
+                        <iframe class="game-video" src="https://www.youtube.com/embed/oWrEg71j6lw?mute=1&autoplay=0&loop=1&playlist=oWrEg71j6lw"
+                                    title="YouTube video"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                            </iframe>
                         <h1>Cyber Monday Madness</h1>
                             <p>Analog Bidding War Card Game</p>
 
@@ -117,7 +127,7 @@
                                 try and score as many points as
                                 they can. By gathering as many items
                                 on their shopping list before running 
-                                out of money or before another player gets if first.
+                                out of money or before another player gets it first.
                             </p>
                     </div>
 
@@ -404,29 +414,6 @@
                             <p>Designed and implemented a relational database using Microsoft SQL Server 2022 and SQL Server Management Studio 20 to manage a game store’s inventory. The project includes structured tables for games, genres, platforms, and stock levels, with defined relationships and data integrity constraints. The database supports efficient queries for tracking inventory, managing product details, and generating sales reports.</p>
   
                     </div>
-
-
-<!-- YouTube Player API Script 
-<script src="https://www.youtube.com/iframe_api"></script>
-<script>
-  let player;
-
-  function onYouTubeIframeAPIReady() {
-    player = new YT.Player('youtube-player', {
-      events: {
-        'onReady': onPlayerReady
-      }
-    });
-  }
-
-  function onPlayerReady(event) {
-    // Optional: mute video to allow autoplay
-    event.target.mute();
-  }
-</script>-->
-
-
-			
                 </section><br>
 			
 				    
