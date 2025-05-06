@@ -72,17 +72,9 @@
             <section id="prev_games">
                 <div id="first_game" class="game-card">
                     <div id="Makeshift" class="game-image"></div>
-                    <div class="video-wrapper"  
-         			onmouseover="player.playVideo()" 
-         			onmouseout="player.pauseVideo()">
-      			<iframe 
-        			id="youtube-player"
-        			src="https://www.youtube.com/embed/2_WRO_7IqLM?enablejsapi=1&rel=0"
-        			frameborder="0"
-        			allow="autoplay; encrypted-media"
-        			allowfullscreen
-      			></iframe>
-    		    </div>
+                    <video class="game-video" controls muted onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;">
+                        <source src="images/works/videos/MSVideo.mp4" type="video/mp4">
+                        </video>
                     <h1>MakeShift</h1>
                         <p>Play as Kit and explore the vast world of outer space. Fight through
                             difficult challenges to take back what's yours!
@@ -96,21 +88,12 @@
             
                     <div id="sec_game" class="game-card">
                         <div id="BlackFridayBlitz" class=" game-image"></div>
-                        <div class="video-wrapper"  
-     				onmouseover="player.playVideo()" 
-     				onmouseout="player.pauseVideo()">
-  			<iframe 
-    				id="youtube-player"
-    				src="https://www.youtube.com/embed/8xxZykNJPkY?enablejsapi=1"
-    				frameborder="0"
-    				allow="autoplay; encrypted-media"
-    				allowfullscreen
-  				></iframe>
-			</div>
-    		    </div>
+                        <video class="game-video" controls muted onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;">
+                        <source src="images/works/videos/BBBTrailer.mp4" type="video/mp4">
+                        </video>
                         <h1>Black Friday Blitz</h1>
                             <p>Genre: Action-Adventure | Beat-‘em-Up | Satirical RPG</p>
-                            <p>A 2D beat ‘em up game where you play as a shopper on Black Friday brawling throughout the
+                            <p>A 2D beat ‘em up game where you play as a shopper on Black Friday, brawling throughout the
                                 chaotic city.
                             </p>
 
@@ -423,7 +406,7 @@
                     </div>
 
 
-<!-- YouTube Player API Script -->
+<!-- YouTube Player API Script 
 <script src="https://www.youtube.com/iframe_api"></script>
 <script>
   let player;
@@ -440,7 +423,7 @@
     // Optional: mute video to allow autoplay
     event.target.mute();
   }
-</script>
+</script>-->
 
 
 			
