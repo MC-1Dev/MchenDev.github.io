@@ -614,7 +614,7 @@ footer {
   transform: translateX(-50%);
   text-align: center;
   width: 100%;
-  padding: 10px 0;
+  padding: 25px 0;
   background: #000; /* dark background for visibility */
   z-index: 1000;
   
