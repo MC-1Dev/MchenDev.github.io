@@ -37,6 +37,41 @@
     color: var(--main-red) !important;
     text-shadow:1px 1px 1px #ff0000;
 }
+
+
+#typed-text {
+  position: absolute;
+  top: 4px; /* Adjust based on where you want it */
+  left: 120px;
+  font-size: 1.0em;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 9999;
+  pointer-events: none;
+}
+.cursor {
+  display: inline-block;
+  width: 10px;
+  background-color: #0f0;
+  animation: blink 0.7s steps(1) infinite;
+ 
+}
+
+#typed-text::after {
+  content: '|';
+  animation: blink 0.7s steps(1) infinite;
+  margin-left: 5px;
+  color: rgb(252, 252, 252); /* or your cursor color */
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+
 .heroContent h1 {
     text-align: left;
     color: var(--main-red) !important;
