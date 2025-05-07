@@ -1,5 +1,5 @@
 const typedTextSpan = document.getElementById("typed-text");
-const textArray = ["Game Developer", "Software Designer", "Web Developer"];
+const textArray = ["Game Developer", "Software Developer", "Web Developer"];
 const typingDelay = 100;
 const erasingDelay = 50;
 const newTextDelay = 2000; // Delay between current and next text
