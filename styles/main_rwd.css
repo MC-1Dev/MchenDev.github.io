@@ -386,6 +386,10 @@ section li{
 }
 
 
+.first-line-indent {
+  text-indent: 2em;
+}
+
 
 #right {
  
@@ -405,7 +409,7 @@ section li{
 }
 
 #left {
-  width:22%;
+  width:20%;
   padding-top: 3%;
   float: left;
   color:#fff;
@@ -554,7 +558,7 @@ aside ul li a  {
 #DebugIsland {background-image: url(../images/works/DebugIsland.png);}
 #FoxTale {background-image: url(../images/works/foxtale.png);}
 #Manga {background-image: url(../images/works/comic.png);}
-#model {background-image: url(../images/works/Model.jpg);}
+#model {background-image: url(../images/works/3d.jpg);}
 
 
 
