@@ -197,7 +197,7 @@
 
 .main-text, .right{
   padding: 20px;
-  border: 1px solid #000;
+  
   box-sizing: border-box;
 }
 
@@ -452,12 +452,13 @@ aside ul li a  {
 #image1{
   background-image:url(../images/game_dev_icon.jpg);
   background-repeat: no-repeat;
-  width:234px;
-  height:212px;
+  width:150px;
+  height:100px;
+  background-size: 75%;
 }
 #image1:hover{
   background-image:url(../images/coding-banner.png);
-  background-size: 80%;
+  background-size: 75%;
  
 }
 
