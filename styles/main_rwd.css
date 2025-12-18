@@ -203,7 +203,7 @@
 
 body {
   font-family: 'Comfortaa', cursive;
-  background-image: url('../images/CodeBG.jpg');
+  background-color: black;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
