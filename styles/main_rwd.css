@@ -614,6 +614,7 @@ aside ul li a  {
 .bounce-top img {
 	width: 200px; /* adjust the image size as needed */
 	overflow: hidden;
+	overflow-x: hidden;
 }
 
 /*@keyframes guyfly {
@@ -818,5 +819,3 @@ footer {
      margin:0;
    }
 }
-
-
